@@ -1,0 +1,22 @@
+.navbar-clazzam {
+	background-color: #196AFF;
+	border-color: #196AFF;
+}
+
+.navbar-clazzam a:hover, navbar-clazzam a:focus {
+	background-color: #003390;
+}
+
+.navbar-brand {
+	font-size: 25px;
+}
+
+.navbar-clazzam a {
+	color: #E8F9FF;
+}
+
+.navbar-clazzam > .container > .container-fluid > .collapse > ul > li > a:hover,
+.navbar-clazzam > .container > .container-fluid > .collapse > ul > li > a:focus {
+	background-color: #003390;
+	color: E8F9FF;
+}
