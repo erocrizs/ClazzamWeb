@@ -9,55 +9,62 @@
 	</head>
 	
 	<body>
-	
-		<header class="navbar navbar-clazzam navbar-static-top" role="banner">
-			<div class="container">
-				<div class="container-fluid">
-					<div class="navbar-header">
-						<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
-							<span class="sr-only">Toggle navigation</span>
-							<span class="icon-bar"></span>
-							<span class="icon-bar"></span>
-							<span class="icon-bar"></span>
-						</button>
-						<a class="navbar-brand" href="#">Clazzam!</a>
-					</div>
-					<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-						<ul class="nav navbar-nav navbar-right">
-							<li><a href="#">Sign Up</a></li>
-							<li><a href="#">About</a></li>
-							<li><a href="#">Contact Us</a></li>
-						</ul>
-					</div>
-				</div>
-			</div>
-		</header>
-		
-		<main class="container">
-			<div class="row">
-				<div class="col-sm-6 col-xs-12 welcome-img">
-					<img src="res/img/bigLogo.png" class="img-responsive"/>
-					<h1>Clazzam!</h1>
-					<p>Managing students in your class has never been this magically easy!</p>
-				</div>
-				<div class="col-sm-6 col-xs-12 login-form">
-					<div class="panel panel-primary">
-						<div class="panel-heading">
-							<h4>Log In</h4>
+		<div class="page">
+			<header class="navbar navbar-clazzam navbar-static-top" role="banner">
+				<div class="container">
+					<div class="container-fluid">
+						<div class="navbar-header">
+							<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+								<span class="sr-only">Toggle navigation</span>
+								<span class="icon-bar"></span>
+								<span class="icon-bar"></span>
+								<span class="icon-bar"></span>
+							</button>
+							<a class="navbar-brand" href="#">Clazzam!</a>
 						</div>
-						<div class="panel-body input-group">
-							<br />
-							<input type="email" class="form-control" placeholder="Username" />
-							<input type="password" class="form-control" placeholder="Password" />
-							<button type="submit" class="btn btn-primary">Log In</button>
+						<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+							<ul class="nav navbar-nav navbar-right">
+								<li><a href="#">Sign Up</a></li>
+								<li><a href="#">About</a></li>
+								<li><a href="#">Contact Us</a></li>
+							</ul>
 						</div>
 					</div>
 				</div>
-			</div>
-		</main>
-		
+			</header>
+			
+			<main class="container welcome-main">
+				<div class="row">
+					<div class="col-sm-6 col-xs-12 welcome-img">
+						<img src="res/img/bigLogo.png" class="img-responsive"/>
+						<h1>Clazzam!</h1>
+						<p>Managing students in your classes has never</p><p>been magically easier!</p>
+					</div>
+					<div class="col-sm-6 col-xs-12 login-form">
+						<div class="panel panel-primary">
+							<div class="panel-heading">
+								<h4>Log In</h4>
+							</div>
+							<div class="panel-body input-group">
+								<br />
+								<input type="email" class="form-control" placeholder="Username" />
+								<input type="password" class="form-control" placeholder="Password" />
+								<button type="submit" class="btn btn-primary">Log In</button>
+							</div>
+						</div>
+					</div>
+				</div>
+			</main>
+			
+			<footer class="footer">
+				<div class="container">
+					Have you downloaded our Android app? <a href="#">Click here now!</a>
+				</div>
+			</footer>
+		</div>
 		
 		<script src="res/js/jquery-2.1.4.min.js"></script>
+		<script src="res/js/front-end.js"></script>
 		<script src="res/js/bootstrap.min.js"></script>
 	</body>
 </html>
