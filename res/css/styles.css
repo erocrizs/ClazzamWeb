@@ -1,3 +1,9 @@
+.test {
+	border-width: 2px;
+	border-color: #f00;
+}
+
+
 html, body{
 	height: 100%;
 	left: 0;
@@ -58,7 +64,7 @@ body {
 	max-width: 70%;
 }
 
-.login-form, .welcome-img {
+.form, .welcome-img {
 	box-sizing: border-box;
 }
 
@@ -71,15 +77,16 @@ body {
 	font-size: 20px;
 }
 
-.login-form .form-control{
+.form .form-control{
 	margin-bottom: 20px;
+	max-width: 100%;
 }
 
-.login-form .input-group .btn-primary {
+.form .btn-primary {
 	float: right;
 }
 
-.login-form .panel {
+.form .panel {
 	margin-top: 30px;
 	top: 50%;
 	width: 80%;
@@ -95,6 +102,9 @@ body {
 .panel-primary > .panel-heading, .btn-primary {
 	background-color: #28C4FF;
 	border-color: #28C4FF;
+	font-size: 20px;
+	padding-left: 20px;
+	padding-right: 20px;
 }
 
 .panel-primary {
@@ -105,22 +115,27 @@ body {
 	background-color: #424093;
 	color: #FFF;
 	font-size: 18px;
-	height: 70px;
+	height: 90px;
 	position: absolute;
 	left: 0;
 	right: 0;
 	bottom: 0;
 	box-sizing: border-box;
-	padding: 20px;
+	padding: 10px;
 }
 
-.footer a
-{
+.footer-link, .footer a {
 	color: #FFCD70;
+	text-align: center;
 }
 
 .page {
 	min-height: 100%;
-	padding-bottom: 70px;
+	padding-bottom: 90px;
 	position: relative;
 }
+
+.btn-group {
+	margin-bottom: 20px;
+}
+
