@@ -176,3 +176,13 @@ body {
 .class-container h3 {
 	font-size: 18px;
 }
+
+.create-class .panel-heading,
+.create-class .panel-body,
+.create-class .panel {
+	width: 100%;
+}
+
+.create-class #instruction {
+	height: 125px;
+}

@@ -2,7 +2,7 @@
 <html>
 	<head>
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<title>Clazzam!</title>
+		<title>Clazzam! - Sign Up</title>
 		<link href="res/css/bootstrap.min.css" rel="stylesheet" />
 		<link href="res/css/styles.css" rel="stylesheet" />
 		
@@ -34,28 +34,41 @@
 				</div>
 			</header>
 			
-			<main class="container">
-				<div class="class-container">
-				
-					<!-- FOR EACH CLASS ASSOCIATED WITH THIS USER, MAKE ONE OF THESE-->
-					<div class="panel panel-primary">
-						<div class="container">
-							<a href="#">
-								<h3>DLSU Calculus 1</h3>
-							</a>
-							<div class="col-sm-6 col-xs-6">
-								<strong>Venue</strong>: CTC 123
+			<main class="container create-class">
+				<div class="row">
+					<div class="col-sm-12 col-xs-12 form">
+						<div class="panel panel-primary">
+							<div class="panel-heading">
+								<h2>Create Class</h2>
 							</div>
-							<div class="col-sm-6 col-xs-6">
-								<strong>Sched</strong>: TTH 4:30-6:00
-							</div>
-							<div class="col-sm-12 col-xs-12">
-								<strong>Size</strong>: 23
+							<div class="panel-body">
+								<div class="row">
+									<div class="col-sm-6 col-xs-12">
+										<h3>Class Information</h3>
+										<label for="classname">Class Name:</label>
+										<input type="text" class="form-control" placeholder="Class Name" id="classname" required />
+										<label for="venue">Venue:</label>
+										<input type="text" class="form-control" placeholder="Venue" id="venue" required />
+										<label for="sched">Schedule:</label>
+										<input type="text" class="form-control" placeholder="Class Name" id="sched" required />
+									</div>
+									<div class="col-sm-6 col-xs-12">										<h3>Enrollment Instruction</h3>
+										<p>Write down what you want your students to put on their digital index card. The
+										instructions that you put in here will be read by your students once they enroll in your
+										class. You can leave this blank.</p>
+										<p>Please note that the system will automatically give you access to their birthday, email, and contact number
+										without needing you to write it here.</p>
+										<textarea class="form-control" placeholder="Instructions here." id="instruction" ></textarea>
+									</div>
+								</div>
+								
+								
+								
+								
+								<button type="submit" class="btn btn-primary">Create Class</button>
 							</div>
 						</div>
 					</div>
-					<!-- -->
-					
 				</div>
 			</main>
 			
