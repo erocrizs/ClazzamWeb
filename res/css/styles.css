@@ -1,0 +1,188 @@
+.test {
+	border-width: 2px;
+	border-color: #f00;
+}
+
+
+html, body{
+	height: 100%;
+	left: 0;
+	right: 0;
+}
+
+body {
+	background-color: #F7FDFF;
+}
+
+.navbar-clazzam {
+	background-color: #357CFF;
+	border-color: #357CFF;
+}
+
+.navbar-clazzam a:hover, .navbar-clazzam a:focus, .navbar-brand:hover, .navbar-brand:focus {
+	background-color: #003390;
+	color: #E8F9FF;
+}
+
+.navbar-brand {
+	font-size: 25px;
+	color: #E8F9FF;
+}
+
+.navbar-clazzam .collapse a {
+	color: #E8F9FF;
+	font-size: 16px;
+}
+
+.navbar-clazzam > .container > .container-fluid > .collapse > ul > li > a:hover,
+.navbar-clazzam > .container > .container-fluid > .collapse > ul > li > a:focus {
+	background-color: #003390;
+	color: #E8F9FF;
+}
+
+.icon-bar {
+	background-color: #E8F9FF;
+}
+
+.navbar-toggle {
+	border-width: 1px;
+	border-color: #E8F9FF;
+}
+
+.navbar-toggle:hover {
+	background-color: #003390;
+}
+
+.center-welcome {
+	margin-top: auto;
+	margin-bottom: auto;
+}
+
+.welcome-img img {
+	margin-left: auto;
+	margin-right: auto;
+	max-width: 70%;
+}
+
+.form, .welcome-img {
+	box-sizing: border-box;
+}
+
+.welcome-img h1 {
+	font-size: 25px;
+	font-weight: bold;
+}
+
+.welcome-img p {
+	font-size: 20px;
+}
+
+.form .form-control{
+	margin-bottom: 20px;
+	max-width: 100%;
+}
+
+.form .btn-primary {
+	float: right;
+}
+
+.form .panel {
+	margin-top: 30px;
+	top: 50%;
+	width: 80%;
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: 10px;
+}
+
+.welcome-main {
+	padding-top: 20px;
+	padding-bottom: 20px;
+}
+
+.panel-primary > .panel-heading, .btn-primary {
+	background-color: #28C4FF;
+	border-color: #28C4FF;
+	font-size: 20px;
+	padding-left: 20px;
+	padding-right: 20px;
+}
+
+.panel-primary {
+	border-color: #00719C;
+}
+
+.footer {
+	background-color: #424093;
+	color: #FFF;
+	font-size: 18px;
+	height: 90px;
+	position: absolute;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	box-sizing: border-box;
+	padding: 10px;
+}
+
+.footer-link, .footer a {
+	color: #FFCD70;
+	text-align: center;
+}
+
+.page {
+	min-height: 100%;
+	padding-bottom: 90px;
+	position: relative;
+}
+
+.btn-group {
+	margin-bottom: 20px;
+}
+
+.center-box {
+	text-align: center;
+	position: relative;
+	max-width: 80%;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.center-box p{
+	font-size: 20px;
+	font-weight: bold;
+}
+
+.article {
+	box-sizing: border-box;
+	padding-left: 30px;
+	padding-right: 30px;
+	font-size: 18px;
+}
+
+.class-container {
+	margin-top: 10px;
+	box-sizing: border-box;
+}
+
+.class-container .panel {
+	box-sizing: border-box;
+	padding: 20px;
+	padding-top: 10px;
+	margin: 10px;
+	font-size: 12px;
+}
+
+.class-container h3 {
+	font-size: 18px;
+}
+
+.create-class .panel-heading,
+.create-class .panel-body,
+.create-class .panel {
+	width: 100%;
+}
+
+.create-class #instruction {
+	height: 125px;
+}

@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Clazzam! - Sign Up</title>
+		<link href="res/css/bootstrap.min.css" rel="stylesheet" />
+		<link href="res/css/styles.css" rel="stylesheet" />
+		
+	</head>
+	
+	<body>
+		<div class="page">
+			<header class="navbar navbar-clazzam navbar-static-top" role="banner">
+				<div class="container">
+					<div class="container-fluid">
+						<div class="navbar-header">
+							<a class="navbar-brand" href="index.html">Clazzam!</a>
+						</div>
+					</div>
+				</div>
+			</header>
+			
+			<main class="container welcome-main">
+				<div class="row">
+					<div class="col-sm-12 col-xs-12 form">
+						<div class="panel panel-primary">
+							<div class="panel-heading">
+								<h4>Sign Up</h4>
+							</div>
+							<div class="panel-body">
+								<div class="row">
+									<div class="col-sm-6 col-xs-12">
+										
+										<label for="email">Email:</label>
+										<input type="email" class="form-control" placeholder="Email" id="email" required/>
+										
+										<label for="account-type">Account Type:</label><br/>
+										 <div class="btn-group" id="account-type" data-toggle="buttons" required>
+											<label class="btn btn-default">
+												<input type="radio" id="radio-teacher" value="1" /> Teacher
+											</label> 
+											<label class="btn btn-default">
+												<input type="radio" id="radio-student" value="2" /> Student
+											</label>
+										</div>
+										<br/>
+										
+										<label for="email">Password:</label>
+										<input type="password" class="form-control" placeholder="Password" id="password"  required/>
+										<label for="email">Confirm Password:</label>
+										<input type="password" class="form-control" placeholder="Confirm Password" id="cpassword"  required/>
+									</div>
+									
+									<div class="col-sm-6 col-xs-12">
+										<label for="email">First Name:</label>
+										<input type="text" class="form-control" placeholder="First Name" id="fname"  required/>
+										<label for="email">Last Name:</label>
+										<input type="text" class="form-control" placeholder="Last Name" id="lname"  required/>
+										<label for="email">Birthday:</label>
+										<input type="date" class="form-control" id="bday"  required/>
+										<label for="email">Contact Number:</label>
+										<input type="tel" class="form-control" placeholder="Contact Number" id="phone"  required/>
+									</div>
+								</div>
+								<button type="submit" class="btn btn-primary">Sign Up</button>
+								
+							</div>
+						</div>
+					</div>
+				</div>
+			</main>
+			
+			<footer class="footer">
+				<div class="container">
+					<div class="row">
+						<div class="col-sm-4 col-xs-12 footer-link">
+							<a href="android.html">Android App</a>
+						</div>
+						<div class="col-sm-4 col-xs-12 footer-link">
+							<a href="about.html">About Clazzam!</a>
+						</div>
+						<div class="col-sm-4 col-xs-12 footer-link">
+							<a href="contact-us.html">Contact Us</a>
+						</div>
+					</div>
+				</div>
+			</footer>
+		</div>
+		
+		<script src="res/js/jquery-2.1.4.min.js"></script>
+		<script src="res/js/front-end.js"></script>
+		<script src="res/js/bootstrap.min.js"></script>
+	</body>
+</html>

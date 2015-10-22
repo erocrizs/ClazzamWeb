@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Clazzam! - Sign Up</title>
+		<link href="res/css/bootstrap.min.css" rel="stylesheet" />
+		<link href="res/css/styles.css" rel="stylesheet" />
+		
+	</head>
+	
+	<body>
+		<div class="page">
+			<header class="navbar navbar-clazzam navbar-static-top" role="banner">
+				<div class="container">
+					<div class="container-fluid">
+						<div class="navbar-header">
+							<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+								<span class="sr-only">Toggle navigation</span>
+								<span class="icon-bar"></span>
+								<span class="icon-bar"></span>
+								<span class="icon-bar"></span>
+							</button>
+							<a class="navbar-brand" href="home.html">Clazzam!</a>
+						</div>
+						<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+							<ul class="nav navbar-nav navbar-right">
+								<li><a href="create-class.html">Create Class</a></li> <!-- appears ONLY if teacher account -->
+								<li><a href="#">Join Class</a></li> <!-- appears ONLY if student account -->
+								<li><a href="#">Account Setting</a></li>
+								<li><a href="index.html">Log Out</a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</header>
+			
+			<main class="container create-class">
+				<div class="row">
+					<div class="col-sm-12 col-xs-12 form">
+						<div class="panel panel-primary">
+							<div class="panel-heading">
+								<h2>Create Class</h2>
+							</div>
+							<div class="panel-body">
+								<div class="row">
+									<div class="col-sm-6 col-xs-12">
+										<h3>Class Information</h3>
+										<label for="classname">Class Name:</label>
+										<input type="text" class="form-control" placeholder="Class Name" id="classname" required />
+										<label for="venue">Venue:</label>
+										<input type="text" class="form-control" placeholder="Venue" id="venue" required />
+										<label for="sched">Schedule:</label>
+										<input type="text" class="form-control" placeholder="Class Name" id="sched" required />
+									</div>
+									<div class="col-sm-6 col-xs-12">										<h3>Enrollment Instruction</h3>
+										<p>Write down what you want your students to put on their digital index card. The
+										instructions that you put in here will be read by your students once they enroll in your
+										class. You can leave this blank.</p>
+										<p>Please note that the system will automatically give you access to their birthday, email, and contact number
+										without needing you to write it here.</p>
+										<textarea class="form-control" placeholder="Instructions here." id="instruction" ></textarea>
+									</div>
+								</div>
+								
+								
+								
+								
+								<button type="submit" class="btn btn-primary">Create Class</button>
+							</div>
+						</div>
+					</div>
+				</div>
+			</main>
+			
+			<footer class="footer">
+				<div class="container">
+					<div class="row">
+						<div class="col-sm-4 col-xs-12 footer-link">
+							<a href="android.html">Android App</a>
+						</div>
+						<div class="col-sm-4 col-xs-12 footer-link">
+							<a href="about.html">About Clazzam!</a>
+						</div>
+						<div class="col-sm-4 col-xs-12 footer-link">
+							<a href="contact-us.html">Contact Us</a>
+						</div>
+					</div>
+				</div>
+			</footer>
+		</div>
+		
+		<script src="res/js/jquery-2.1.4.min.js"></script>
+		<script src="res/js/front-end.js"></script>
+		<script src="res/js/bootstrap.min.js"></script>
+	</body>
+</html>
