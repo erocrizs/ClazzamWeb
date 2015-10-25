@@ -2,7 +2,7 @@
 <html>
 	<head>
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<title>Clazzam!</title>
+		<title>Clazzam! - Sign Up</title>
 		<link href="res/css/bootstrap.min.css" rel="stylesheet" />
 		<link href="res/css/styles.css" rel="stylesheet" />
 		
@@ -34,28 +34,38 @@
 				</div>
 			</header>
 			
-			<main class="container">
-				<div class="class-container">
-				
-					<!-- FOR EACH CLASS ASSOCIATED WITH THIS USER, MAKE ONE OF THESE-->
-					<div class="panel panel-primary">
-						<div class="container">
-							<a href="#">
-								<h3>DLSU Calculus 1</h3>
-							</a>
-							<div class="col-sm-6 col-xs-6">
-								<strong>Venue</strong>: CTC 123
+			<main class="container welcome-main">
+				<div class="row">
+					<div class="col-sm-12 col-xs-12 form">
+						<div class="panel panel-primary">
+							<div class="panel-heading">
+								<h4>Account Settings</h4>
 							</div>
-							<div class="col-sm-6 col-xs-6">
-								<strong>Sched</strong>: TTH 4:30-6:00
-							</div>
-							<div class="col-sm-12 col-xs-12">
-								<strong>Size</strong>: 23
-							</div>
+							<form class="panel-body">
+								<!-- Default value here are of that in their rows in the database -->
+								<label for="account-type">Account Type:</label>
+								<input type="email" class="form-control" value="Teacher" id="email" disabled/>
+								<label for="email">Email:</label>
+								<input type="email" class="form-control" placeholder="Email" value="setEmail" id="email" required/>
+								<label for="fname">First Name:</label>
+								<input type="text" class="form-control" placeholder="First Name" value="setFName" id="fname"  required/>
+								<label for="lname">Last Name:</label>
+								<input type="text" class="form-control" placeholder="Last Name" value="setLName" id="lname"  required/>
+								<label for="bday">Birthday:</label>
+								<input type="date" class="form-control" id="bday"  value="1996-01-10" required/>
+								<label for="phone">Contact Number:</label>
+								<input type="tel" class="form-control" placeholder="Contact Number" value="09155555555" id="phone"  required/>
+								<hr />
+								<label for="email">Password:</label>
+								<input type="password" class="form-control" placeholder="Password" id="phone"  required/>
+								<div class="btn-group">
+									<button type="submit" class="btn btn-primary">Confirm Changes</button>
+									<button type="reset" class="btn btn-primary">Delete Changes</button>
+								</div>
+								
+							</form>
 						</div>
 					</div>
-					<!-- -->
-					
 				</div>
 			</main>
 			
