@@ -192,6 +192,17 @@ body {
 	width: 100%;
 }
 
-.create-class #instruction {
+.create-class #instruction, #response {
+	text-align: left;
 	height: 125px;
+}
+
+.wid-small {
+	max-width: 400px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.panel-body p {
+	padding-left: 10px;
 }
