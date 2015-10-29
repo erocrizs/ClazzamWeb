@@ -82,17 +82,13 @@ body {
 	max-width: 100%;
 }
 
-.form .btn-primary {
+.form .btn-primary, .form .btn-group {
 	float: right;
 }
 
 .form .btn-group .btn-primary {
 	float: none;
 	font-size: 16px;
-}
-
-.form .btn-group {
-	float: right;
 }
 
 .form .panel {
@@ -213,4 +209,8 @@ body {
 
 .bigLogo {
 	border-radius: 20px;
+}
+
+.form .row .btn-group {
+	float: none;
 }
