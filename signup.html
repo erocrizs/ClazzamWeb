@@ -36,12 +36,12 @@
 										<input type="email" class="form-control" placeholder="Email" id="email" required/>
 										
 										<label for="account-type">Account Type:</label><br/>
-										 <div class="btn-group" id="account-type" data-toggle="buttons" required>
+										 <div class="btn-group radio-btn-group" id="account-type" data-toggle="buttons" required>
 											<label class="btn btn-default">
-												<input type="radio" id="radio-teacher" value="1" /> Teacher
+												<input type="radio" id="radio-teacher" name="account-type" value="1" /> Teacher
 											</label> 
 											<label class="btn btn-default">
-												<input type="radio" id="radio-student" value="2" /> Student
+												<input type="radio" id="radio-student" name="account-type" value="2" /> Student
 											</label>
 										</div>
 										<br/>
@@ -57,13 +57,21 @@
 										<input type="text" class="form-control" placeholder="First Name" id="fname"  required/>
 										<label for="lname">Last Name:</label>
 										<input type="text" class="form-control" placeholder="Last Name" id="lname"  required/>
-										<label for="bday">Birthday:</label>
-										<input type="date" class="form-control" id="bday"  required/>
 										<label for="phone">Contact Number:</label>
 										<input type="tel" class="form-control" placeholder="Contact Number" id="phone"  required/>
+										
+										<div id="studentOnly">
+											<hr />
+											<label for="yearncourse">Year and Course:</label>
+											<input type="text" class="form-control" placeholder="Year and Course" id="yearncourse" required="false"/>
+											<label for="nickname">Nickname:</label>
+											<input type="text" class="form-control" placeholder="Nickname" id="nickname" />
+											<label for="bday">Birthday:</label>
+											<input type="date" class="form-control" id="bday" />
+										</div>
 									</div>
 								</div>
-								<button type="submit" class="btn btn-primary">Sign Up</button>
+								<input type="submit" class="btn btn-primary" value="Sign Up" />
 								
 							</form>
 						</div>
