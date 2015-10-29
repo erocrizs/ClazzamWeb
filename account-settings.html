@@ -52,10 +52,19 @@
 								<input type="text" class="form-control" placeholder="First Name" value="setFName" id="fname"  required/>
 								<label for="lname">Last Name:</label>
 								<input type="text" class="form-control" placeholder="Last Name" value="setLName" id="lname"  required/>
-								<label for="bday">Birthday:</label>
-								<input type="date" class="form-control" id="bday"  value="1996-01-10" required/>
 								<label for="phone">Contact Number:</label>
 								<input type="tel" class="form-control" placeholder="Contact Number" value="09155555555" id="phone"  required/>
+								
+								<!-- this SHOULD NOT show up if the account is of the teacher's -->
+								<div id="studnet-details">
+									<label for="yearncourse">Year and Course:</label>
+									<input type="text" class="form-control" placeholder="Year and Course" value="YNC" id="yearncourse" required="false"/>
+									<label for="nickname">Nickname:</label>
+									<input type="text" class="form-control" placeholder="Nickname" value="setNName" id="nickname" />
+									<label for="bday">Birthday:</label>
+									<input type="date" class="form-control" id="bday" value="1991-01-10"/>
+								</div>
+								
 								<hr />
 								<label for="email">Password:</label>
 								<input type="password" class="form-control" placeholder="Password" id="phone"  required/>
