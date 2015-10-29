@@ -206,3 +206,11 @@ body {
 .panel-body p {
 	padding-left: 10px;
 }
+
+.logo {
+	max-height: 80px;
+}
+
+.bigLogo {
+	border-radius: 20px;
+}
