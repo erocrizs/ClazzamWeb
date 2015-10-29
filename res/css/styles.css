@@ -206,3 +206,13 @@ body {
 .panel-body p {
 	padding-left: 10px;
 }
+
+#img-responsive {
+	width: 320px;
+    height: 300px;
+}
+
+#img-responsive center-box {
+	width: 150px;
+	height: 150px;
+}
