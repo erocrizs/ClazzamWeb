@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Clazzam! - ClassNameHere</title>
+		<link href="res/css/bootstrap.min.css" rel="stylesheet" />
+		<link href="res/css/styles.css" rel="stylesheet" />
+		<link rel="shortcut icon" href="res/img/logo.png" />
+		
+	</head>
+	
+	<body>
+		<div class="page">
+			<header class="navbar navbar-clazzam navbar-static-top" role="banner">
+				<div class="container">
+					<div class="container-fluid">
+						<div class="navbar-header">
+							<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+								<span class="sr-only">Toggle navigation</span>
+								<span class="icon-bar"></span>
+								<span class="icon-bar"></span>
+								<span class="icon-bar"></span>
+							</button>
+							<a class="navbar-brand" href="home.html">Clazzam!</a>
+						</div>
+						<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+							<ul class="nav navbar-nav navbar-right">
+								<li><a href="create-class.html">Create Class</a></li> <!-- appears ONLY if teacher account -->
+								<li><a href="join1.html">Join Class</a></li> <!-- appears ONLY if student account -->
+								<li><a href="account-settings.html">Account Setting</a></li>
+								<li><a href="index.html">Log Out</a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</header>
+			
+			<main class="container">
+				<div class="class-container">
+				
+					<div class="panel panel-primary">
+						<div class="container">
+							<h3>DLSU Calculus 1</h3>
+							<div class="col-sm-6 col-xs-6">
+								<strong>Section</strong>: BB
+							</div>
+							<div class="col-sm-6 col-xs-6">
+								<strong>Venue</strong>: CTC 123
+							</div>
+							<div class="col-sm-6 col-xs-6">
+								<strong>Sched</strong>: TTH 4:30-6:00
+							</div>
+							<div class="col-sm-6 col-xs-6">
+								<strong>Size</strong>: 23
+							</div>
+							<div class="col-sm-12 col-xs-12">
+								<strong>Teacher</strong>: teacherNameHere
+							</div>
+							
+							<!-- The next div only appears if the user is a teacher -->
+							<div class="col-sm-12 col-xs-12">
+								<a href="class-settings.html"><strong>
+									Class Settings
+								</strong></a>
+							</div>
+						</div>
+					</div>
+					<div class="row container">
+						
+						<aside class="col-sm-3 col-xs-12">
+						
+							<!-- The next div only appears if the user is a teacher -->
+							<div class="panel panel-primary">
+								<h4>Class Code: 1232321</h4>
+								<p>Show this class code to
+								your students so can enroll in your
+								Clazzam class!</p>
+							</div>
+							
+						</aside>
+						
+						<div class="col-sm-9 col-xs-12">
+							<!-- The last column should only appear if the viewer is a teacher -->
+							<table class="table student-table table-striped table-bordered table-hover">
+								<thead>
+									<tr>
+										<th>Surname</th>
+										<th>Firstname</th>
+										<th>Year and Course</th>
+										<th>Index Card</th>
+									</tr>
+								</thead>
+								<tbody>
+									
+									<!-- For each student, make a new row -->
+									<tr>
+										<td>Rizal</td>
+										<td>Jose</td>
+										<td>MD Optalmology</td>
+										<td>
+											<a href="#">
+												click here
+											</a>
+										</td>
+									</tr>
+									<tr>
+										<td>Tan</td>
+										<td>Andre</td>
+										<td>3 - BS Computer Science</td>
+										<td>
+											<a href="#">
+												click here
+											</a>
+										</td>
+									</tr>
+									<tr>
+										<td>Martinez</td>
+										<td>Zachary Ivan</td>
+										<td>3 - BS CS/BS DGDD</td>
+										<td>
+											<a href="#">
+												click here
+											</a>
+										</td>
+									</tr>
+									<tr>
+										<td>Lola</td>
+										<td>Bunny</td>
+										<td>filler here</td>
+										<td>
+											<a href="#">
+												click here
+											</a>
+										</td>
+									</tr>
+									
+								</tbody>
+							</table>
+						</div>
+						
+					</div>
+					
+					
+				</div>
+			</main>
+			
+			<footer class="footer">
+				<div class="container">
+					<div class="row">
+						<div class="col-sm-4 col-xs-12 footer-link">
+							<a href="android.html">Android App</a>
+						</div>
+						<div class="col-sm-4 col-xs-12 footer-link">
+							<a href="about.html">About Clazzam!</a>
+						</div>
+						<div class="col-sm-4 col-xs-12 footer-link">
+							<a href="contact-us.html">Contact Us</a>
+						</div>
+					</div>
+				</div>
+			</footer>
+		</div>
+		
+		<script src="res/js/jquery-2.1.4.min.js"></script>
+		<script src="res/js/front-end.js"></script>
+		<script src="res/js/bootstrap.min.js"></script>
+	</body>
+</html>

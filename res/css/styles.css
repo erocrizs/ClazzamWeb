@@ -215,3 +215,22 @@ body {
 .form .row .btn-group {
 	float: none;
 }
+
+.student-table {
+	max-width: 90%;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.table-striped> tbody >tr:nth-of-type(even) {
+    background-color: #B2D3FF;
+}
+
+.table-striped> tbody >tr:nth-of-type(odd) {
+    background-color: #E8F2FF;
+}
+
+.student-table thead tr {
+    background-color: #004BB2;
+	color: #FFFFFF;
+}
