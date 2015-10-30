@@ -2,7 +2,7 @@
 <html>
 	<head>
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<title>Clazzam!</title>
+		<title>Clazzam! - Create Class</title>
 		<link href="res/css/bootstrap.min.css" rel="stylesheet" />
 		<link href="res/css/styles.css" rel="stylesheet" />
 		<link rel="shortcut icon" href="res/img/logo.png" />
@@ -35,28 +35,45 @@
 				</div>
 			</header>
 			
-			<main class="container">
-				<div class="class-container">
-				
-					<!-- FOR EACH CLASS ASSOCIATED WITH THIS USER, MAKE ONE OF THESE-->
-					<div class="panel panel-primary">
-						<div class="container">
-							<a href="class-page.html">
-								<h3>DLSU Calculus 1</h3>
-							</a>
-							<div class="col-sm-6 col-xs-6">
-								<strong>Venue</strong>: CTC 123
+			<main class="container create-class">
+				<div class="row">
+					<div class="col-sm-12 col-xs-12 form">
+						<div class="panel panel-primary">
+							<div class="panel-heading">
+								<h2>Class Settings</h2>
 							</div>
-							<div class="col-sm-6 col-xs-6">
-								<strong>Sched</strong>: TTH 4:30-6:00
-							</div>
-							<div class="col-sm-12 col-xs-12">
-								<strong>Size</strong>: 23
+							<div class="panel-body">
+								<form>
+									<div class="row">
+										<div class="col-sm-6 col-xs-12">
+											<h3>Class Information</h3>
+											<label for="classname">Class Name:</label>
+											<input type="text" class="form-control" value="set" placeholder="Class Name" id="classname" required />
+											<label for="section">Section:</label>
+											<input type="text" class="form-control" value="set" placeholder="Section" id="section" required />
+											<label for="venue">Venue:</label>
+											<input type="text" class="form-control" value="set" placeholder="Venue" id="venue" required />
+											<label for="sched">Schedule:</label>
+											<input type="text" class="form-control" value="set" placeholder="Class Name" id="sched" required />
+										</div>
+										<div class="col-sm-6 col-xs-12">
+											<h3>Enrollment Instruction</h3>
+											<p>Write down what you want your students to put on their index card when they enroll in your class. The
+											instructions that you put in here will be read by your students once they enroll in your
+											class. You can leave this blank.</p>
+											<p>Your student's name, email, year and course, birthday, and nickname will appear in their index card
+											by default.</p>
+											<textarea class="form-control" placeholder="Instructions here." id="instruction" >Whatever placed here</textarea>
+										</div>
+									</div>
+									<div class="btn-group">
+										<input type="submit" class="btn btn-primary" value="Confirm Changes" />
+										<input type="reset" class="btn btn-primary" value="Reset Changes" />
+									</div>
+								</form>
 							</div>
 						</div>
 					</div>
-					<!-- -->
-					
 				</div>
 			</main>
 			
