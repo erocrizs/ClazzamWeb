@@ -43,18 +43,18 @@
 								<h2>Class Settings</h2>
 							</div>
 							<div class="panel-body">
-								<form>
+								<form id="class-setting">
 									<div class="row">
 										<div class="col-sm-6 col-xs-12">
 											<h3>Class Information</h3>
 											<label for="classname">Class Name:</label>
-											<input type="text" class="form-control" value="set" placeholder="Class Name" id="classname" required />
+											<input type="text" class="form-control" value="loading" placeholder="Class Name" id="classname" required disabled="true" />
 											<label for="section">Section:</label>
-											<input type="text" class="form-control" value="set" placeholder="Section" id="section" required />
+											<input type="text" class="form-control" value="loading" placeholder="Section" id="section" required disabled="true" />
 											<label for="venue">Venue:</label>
-											<input type="text" class="form-control" value="set" placeholder="Venue" id="venue" required />
+											<input type="text" class="form-control" value="loading" placeholder="Venue" id="venue" required disabled="true" />
 											<label for="sched">Schedule:</label>
-											<input type="text" class="form-control" value="set" placeholder="Class Name" id="sched" required />
+											<input type="text" class="form-control" value="loading" placeholder="Class Name" id="sched" required disabled="true" />
 										</div>
 										<div class="col-sm-6 col-xs-12">
 											<h3>Enrollment Instruction</h3>
@@ -63,12 +63,13 @@
 											class. You can leave this blank.</p>
 											<p>Your student's name, email, year and course, birthday, and nickname will appear in their index card
 											by default.</p>
-											<textarea class="form-control" placeholder="Instructions here." id="instruction" >Whatever placed here</textarea>
+											<textarea class="form-control" placeholder="Instructions here." id="instruction" disabled="true" >loading</textarea>
 										</div>
 									</div>
 									<div class="btn-group">
 										<input type="submit" class="btn btn-primary" value="Confirm Changes" />
 										<input type="reset" class="btn btn-primary" value="Reset Changes" />
+										<div id="confirmation"></div>
 									</div>
 								</form>
 							</div>
@@ -97,5 +98,7 @@
 		<script src="res/js/jquery-2.1.4.min.js"></script>
 		<script src="res/js/front-end.js"></script>
 		<script src="res/js/bootstrap.min.js"></script>
+		<script src="http://www.parsecdn.com/js/parse-latest.js"></script>
+		<script src="res/js/class-settings.js"></script>
 	</body>
 </html>

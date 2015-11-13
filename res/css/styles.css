@@ -234,3 +234,9 @@ body {
     background-color: #004BB2;
 	color: #FFFFFF;
 }
+
+#confirmation {
+	color: #0f8a38;
+	size: 10px;
+	font-weight: bold;
+}
