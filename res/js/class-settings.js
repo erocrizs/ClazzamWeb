@@ -32,38 +32,40 @@ function setFields() {
 }
 	
 setFields();
+$(document).ready(function() {
+	$("#class-setting").submit( function(event) {
+		event.preventDefault();
+		var classname = $("#classname").val();
+		var section = $("#section").val();
+		var sched = $("#sched").val();
+		var venue = $("#venue").val();
+		var inst = $("#instruction").val();
+		if(currClass!=null) {
+			currClass.set("cat_no", classname);
+			currClass.set("section", section);
+			currClass.set("schedule", sched);
+			currClass.set("venue", venue);
+			currClass.set("instruction", inst);
+			console.log("Pop");
+			currClass.save({
+				success: function(){
+					$("#classname").attr("value", classname);
+					$("#section").attr("value", section);
+					$("#venue").attr("value", venue);
+					$("#sched").attr("value", sched);
+					$("#instruction").html(inst);
+					
+					$("#confirmation").html("Changes saved");
+					$("#confirmation").show();
+					setTimeout(function() {
+						$("#confirmation").hide();
+					}, 2000);
+					
+				}, error: function(error){
+					console.log("Class Save Error: " + error.message);
+				}
+			});
+		}
+	});
 
-$("#class-setting").submit( function(event) {
-	event.preventDefault();
-	var classname = $("#classname").val();
-	var section = $("#section").val();
-	var sched = $("#sched").val();
-	var venue = $("#venue").val();
-	var inst = $("#instruction").val();
-	if(currClass!=null) {
-		currClass.set("cat_no", classname);
-		currClass.set("section", section);
-		currClass.set("schedule", sched);
-		currClass.set("venue", venue);
-		currClass.set("instruction", inst);
-		console.log("Pop");
-		currClass.save({
-			success: function(){
-				$("#classname").attr("value", classname);
-				$("#section").attr("value", section);
-				$("#venue").attr("value", venue);
-				$("#sched").attr("value", sched);
-				$("#instruction").html(inst);
-				
-				$("#confirmation").html("Changes saved");
-				$("#confirmation").show();
-				setTimeout(function() {
-					$("#confirmation").hide();
-				}, 2000);
-				
-			}, error: function(error){
-				console.log("Class Save Error: " + error.message);
-			}
-		});
-	}
 });

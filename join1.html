@@ -7,6 +7,11 @@
 		<link href="res/css/styles.css" rel="stylesheet" />
 		<link rel="shortcut icon" href="res/img/logo.png" />
 		
+		<script src="res/js/jquery-2.1.4.min.js"></script>
+		<script src="res/js/bootstrap.min.js"></script>
+		<script src="http://www.parsecdn.com/js/parse-latest.js"></script>
+		<script src="res/js/front-end.js"></script>
+		<script src="res/js/join1.js"></script>
 	</head>
 	
 	<body>
@@ -43,12 +48,10 @@
 								<h2>Join Class</h2>
 							</div>
 							<div class="panel-body">
-								<form>
+								<form id="find-class">
 									<label for="classCode">Type Class Code Here:</label>
 									<input type="text" class="form-control" placeholder="Class Code" id="classCode" required />
-									<a href="join2.html"> <!-- Remove this link in the actual thing -->
-										<input type="button" class="btn btn-primary" value="Find Class" />
-									</a>
+									<input type="submit" class="btn btn-primary" value="Find Class" />
 								</form>
 							</div>
 						</div>
@@ -73,8 +76,5 @@
 			</footer>
 		</div>
 		
-		<script src="res/js/jquery-2.1.4.min.js"></script>
-		<script src="res/js/front-end.js"></script>
-		<script src="res/js/bootstrap.min.js"></script>
 	</body>
 </html>

@@ -7,6 +7,11 @@
 		<link href="res/css/styles.css" rel="stylesheet" />
 		<link rel="shortcut icon" href="res/img/logo.png" />
 		
+		<script src="res/js/jquery-2.1.4.min.js"></script>
+		<script src="res/js/bootstrap.min.js"></script>
+		<script src="http://www.parsecdn.com/js/parse-latest.js"></script>
+		<script src="res/js/front-end.js"></script>
+		<script src="res/js/join2.js"></script>
 	</head>
 	
 	<body>
@@ -43,22 +48,22 @@
 								<h2>Join Class</h2>
 							</div>
 							<div class="panel-body">
-								<form>
+								<form id="join-class">
 									
 									<!-- The info here will be coming from the server -->
 									
-									<h3>Class Name Here</h3>
+									<h3 id="classname">LOADING</h3>
 									<p>
-										<strong>Class Code: </strong> class code here <br />
-										<strong>Section: </strong> section here <br />
-										<strong>Venue: </strong> venue here <br />
-										<strong>Schedule: </strong> schedule here <br />
-										<strong>Teacher: </strong> teacher here <br />
+										<strong>Class Code: </strong> <span id="classCode">loading</span> <br />
+										<strong>Section: </strong> <span id="section">loading</span> <br />
+										<strong>Venue: </strong> <span id="venue">loading</span>  <br />
+										<strong>Schedule: </strong> <span id="schedule">loading</span> <br />
+										<strong>Teacher: </strong> <span id="teacher">loading</span>  <br />
 									</p>
 									<hr />
 									<h4>Enrollment Instruction: </h4>
 									<p>The teacher of this class asks you to follow these instructions. Put your response in the box below. </p>
-									<textarea class="form-control" id="instruction" disabled>Whatever the teacher placed here.</textarea>
+									<textarea class="form-control" id="instruction" disabled></textarea>
 									<textarea class="form-control" placeholder="Response here." id="response" required></textarea>
 									
 									<div class="btn-group">
@@ -88,9 +93,5 @@
 				</div>
 			</footer>
 		</div>
-		
-		<script src="res/js/jquery-2.1.4.min.js"></script>
-		<script src="res/js/front-end.js"></script>
-		<script src="res/js/bootstrap.min.js"></script>
 	</body>
 </html>
