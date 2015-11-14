@@ -1,6 +1,13 @@
 <!DOCTYPE html>
 <html>
 	<head>
+	
+		<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+		<script type="text/javascript" src="http://www.parsecdn.com/js/parse-latest.js"></script>
+		<script src="res/js/jquery-2.1.4.min.js"></script>
+		<script src="res/js/front-end.js"></script>
+		<script src="res/js/bootstrap.min.js"></script>
+		
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<title>Clazzam! - Sign Up</title>
 		<link href="res/css/bootstrap.min.css" rel="stylesheet" />
@@ -21,13 +28,17 @@
 			</header>
 			
 			<main class="container welcome-main">
+			<!--<form id="signup">
+				<p><input id="signup-name" type="text"></p>
+				<p><input id="signup-password" type="password"></p>
+				<p><input id="signup-submit" type="submit"></p>-->
 				<div class="row">
 					<div class="col-sm-12 col-xs-12 form">
 						<div class="panel panel-primary">
 							<div class="panel-heading">
 								<h4>Sign Up</h4>
 							</div>
-							<form class="panel-body">
+							<form class="panel-body" id="signup">
 								<div class="row">
 									<div class="col-sm-6 col-xs-12">
 										
@@ -37,10 +48,10 @@
 										<label for="account-type">Account Type:</label><br/>
 										 <div class="btn-group" id="account-type" data-toggle="buttons" required>
 											<label class="btn btn-default">
-												<input type="radio" id="radio-teacher" value="1" /> Teacher
+												<input type="radio" id="radio-teacher" name ="type" value="teacher" /> Teacher
 											</label> 
 											<label class="btn btn-default">
-												<input type="radio" id="radio-student" value="2" /> Student
+												<input type="radio" id="radio-student" name ="type" value="student" /> Student
 											</label>
 										</div>
 										<br/>
@@ -62,14 +73,13 @@
 										<input type="tel" class="form-control" placeholder="Contact Number" id="phone"  required/>
 									</div>
 								</div>
-								<button type="submit" class="btn btn-primary">Sign Up</button>
+								<a href="home.html"><button type="submit" class="btn btn-primary">Sign Up</button></a>
 								
 							</form>
 						</div>
 					</div>
 				</div>
 			</main>
-			
 			<footer class="footer">
 				<div class="container">
 					<div class="row">
@@ -87,8 +97,45 @@
 			</footer>
 		</div>
 		
-		<script src="res/js/jquery-2.1.4.min.js"></script>
-		<script src="res/js/front-end.js"></script>
-		<script src="res/js/bootstrap.min.js"></script>
+		<script type = "text/javascript">
+		Parse.initialize("wfirKeMS4BdimLVEoKvQqdVLHq7W4DzrHtSU5tc1", "Qp8T71gkHCWapC0IQLPNRPyCG6WqcC2QX1B4w8v0");
+			
+			$("#signup").submit(function(event){
+			event.preventDefault();
+			
+		//	var name = $("#signup-name").val();
+		//	var pass = $("#signup-password").val();
+			
+			var email = $("#email").val();
+			var account = $('input[name=type]:checked').val();
+			var pass = $("#password").val();
+			var cpass = $("#cpassword").val();
+			var fname = $("#fname").val();
+			var lname = $("#lname").val();
+			var bday = document.getElementById("bday").value;
+			var phone = $("#phone").val();
+			
+			var user = new Parse.User();
+			user.set("username", name);
+			user.set("password", pass);
+			
+			user.set("username", email);
+			user.set("account", account);
+			user.set("password", pass);
+			user.set("cpassword", cpass);
+			user.set("fname", fname);
+			user.set("lname", lname);
+			user.set("bday", bday);
+			user.set("phone", phone);
+			
+			user.signUp(null, {success: function(user){
+			//alert("Welcome to Clazzam!");
+			}, error: function(user, error){
+				console.log("signup error:"+error.message);
+				}
+			});
+			
+			});
+	</script>
 	</body>
 </html>

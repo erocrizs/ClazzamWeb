@@ -1,6 +1,13 @@
 <!DOCTYPE html>
 <html>
 	<head>
+		
+		<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+		<script type="text/javascript" src="http://www.parsecdn.com/js/parse-latest.js"></script>
+		<script src="res/js/jquery-2.1.4.min.js"></script>
+		<script src="res/js/front-end.js"></script>
+		<script src="res/js/bootstrap.min.js"></script>
+		
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<title>Clazzam! - Log In or Sign Up</title>
 		<link href="res/css/bootstrap.min.css" rel="stylesheet" />
@@ -28,16 +35,16 @@
 						<p>Managing students in your classes has never been easier!</p>
 					</div>
 					<div class="col-sm-6 col-xs-12">
-						<form class="form">
+						<form class="form" id="login">
 							<div class="panel panel-primary">
 								<div class="panel-heading">
 									<h4>Log In</h4>
 								</div>
 								<div class="panel-body input-group">
 									<br />
-									<input type="email" class="form-control" placeholder="Email" />
-									<input type="password" class="form-control" placeholder="Password" />
-									<button type="submit" class="btn btn-primary">Log In</button>
+									<input type="email" class="form-control" placeholder="Email" id="login-email" />
+									<input type="password" class="form-control" placeholder="Password" id="login-password" />
+									<a href="home.html"><button type="submit" class="btn btn-primary">Log In</button></a>
 								</div>
 							</div>
 						</form>
@@ -68,8 +75,20 @@
 			</footer>
 		</div>
 		
-		<script src="res/js/jquery-2.1.4.min.js"></script>
-		<script src="res/js/front-end.js"></script>
-		<script src="res/js/bootstrap.min.js"></script>
+		<script type = "text/javascript">
+		Parse.initialize("CVmC8WtT0XlojqCjh4yCTVlvqdfP1RCZywW4diNP", "hiiYuylyx0e0moeYHgOrz2VVG8cqFFcqM3Ic1k3F");
+			Parse.User.logOut();
+			
+			$("#login").submit(function(event){
+			event.preventDefault();
+			
+			var email = $("#login-email").val();
+			var password = $("#login-password").val();
+			
+			Parse.User.logIn(email, password, {success: function(user){
+				alert("Welcome to Clazzam!"); }, error: function(user, error){
+				console.log("Log in error:"+error.message); }});
+				});
+		</script>	
 	</body>
 </html>

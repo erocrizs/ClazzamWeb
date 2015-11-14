@@ -1,6 +1,13 @@
 <!DOCTYPE html>
 <html>
 	<head>
+	
+		<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+		<script type="text/javascript" src="http://www.parsecdn.com/js/parse-latest.js"></script>
+		<script src="res/js/jquery-2.1.4.min.js"></script>
+		<script src="res/js/front-end.js"></script>
+		<script src="res/js/bootstrap.min.js"></script>
+		
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<title>Clazzam! - Create Class</title>
 		<link href="res/css/bootstrap.min.css" rel="stylesheet" />
@@ -27,7 +34,7 @@
 								<li><a href="create-class.html">Create Class</a></li> <!-- appears ONLY if teacher account -->
 								<li><a href="join1.html">Join Class</a></li> <!-- appears ONLY if student account -->
 								<li><a href="account-settings.html">Account Setting</a></li>
-								<li><a href="index.html">Log Out</a></li>
+								<li><a id="logout" href="index.html">Log Out</a></li>
 							</ul>
 						</div>
 					</div>
@@ -89,9 +96,11 @@
 				</div>
 			</footer>
 		</div>
-		
-		<script src="res/js/jquery-2.1.4.min.js"></script>
-		<script src="res/js/front-end.js"></script>
-		<script src="res/js/bootstrap.min.js"></script>
+		<script type = "text/javascript">
+		Parse.initialize("wfirKeMS4BdimLVEoKvQqdVLHq7W4DzrHtSU5tc1", "Qp8T71gkHCWapC0IQLPNRPyCG6WqcC2QX1B4w8v0");
+		$("#logout").click(function logOut(event){
+		Parse.User.logOut();
+		});
+		</script>
 	</body>
 </html>
