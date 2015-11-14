@@ -1,29 +1,7 @@
-$(document).ready(function(){
+Parse.initialize("typ8IpsCsDFlcmktAhyBZ7ICRysjKZP6Ko3y1TQa", "iKZ5oKs3dbndXfba1khGWZwmcffgulNN4SCUj0ia");
 
-    $("#studentOnly").hide();
-
-    $("input:radio[name='account-type']").change(function(){  
-
-            if(this.value == '2' && this.checked){
-              $("#studentOnly").show("slow", null);
-			  $("#yearncourse").attr("required", true);
-			  $("#nickname").attr("required", true);
-			  $("#birthday").attr("required", true);
-			  
-			  $("#yearncourse").attr("disabled", false);
-			  $("#nickname").attr("disabled", false);
-			  $("#birthday").attr("disabled", false);
-            }else{
-              $("#studentOnly").hide("slow", null);
-			  $("#yearncourse").attr("required", false);
-			  $("#nickname").attr("required", false);
-			  $("#birthday").attr("required", false);
-			  
-			  $("#yearncourse").attr("disabled", true);
-			  $("#nickname").attr("disabled", true);
-			  $("#birthday").attr("disabled", true);
-            }
-
-    });
-
-});
+var User = Parse.User;
+var Teacher = Parse.Object.extend("Teacher");
+var Student = Parse.Object.extend("Student");
+var Class_ = Parse.Object.extend("Class_");
+var Enrollment = Parse.Object.extend("Enrollment");
