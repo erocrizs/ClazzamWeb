@@ -10,6 +10,7 @@
 		<script src="res/js/jquery-2.1.4.min.js"></script>
 		<script src="res/js/bootstrap.min.js"></script>
 		<script src="http://www.parsecdn.com/js/parse-latest.js"></script>
+		<script src="res/js/front-end.js"></script>
 		<script src="res/js/sign-up.js"></script>
 	</head>
 	
@@ -32,7 +33,7 @@
 							<div class="panel-heading">
 								<h4>Sign Up</h4>
 							</div>
-							<form class="panel-body">
+							<form class="panel-body" nane="signup" id="signup">
 								<div class="row">
 									<div class="col-sm-6 col-xs-12">
 										
@@ -42,10 +43,10 @@
 										<label for="account-type">Account Type:</label><br/>
 										 <div class="btn-group radio-btn-group" id="account-type" data-toggle="buttons" required>
 											<label class="btn btn-default">
-												<input type="radio" id="radio-teacher" name="account-type" value="1" /> Teacher
+												<input type="radio" id="radio-teacher" name="type" value="teacher" /> Teacher
 											</label> 
 											<label class="btn btn-default">
-												<input type="radio" id="radio-student" name="account-type" value="2" /> Student
+												<input type="radio" id="radio-student" name="type" value="student" /> Student
 											</label>
 										</div>
 										<br/>
