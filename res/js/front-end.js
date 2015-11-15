@@ -6,9 +6,8 @@ var Student = Parse.Object.extend("Student");
 var Class_ = Parse.Object.extend("Class_");
 var Enrollment = Parse.Object.extend("Enrollment");
 
-
 $(document).ready(function() {
-	if(!Parse.User.current()){
+	if(Parse.User.current()){
 		$("#collapse").hide();
 	}	
 });
