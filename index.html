@@ -11,6 +11,7 @@
 		<script src="res/js/bootstrap.min.js"></script>
 		<script src="http://www.parsecdn.com/js/parse-latest.js"></script>
 		<script src="res/js/front-end.js"></script>
+		<script src="res/js/index.js"></script>
 	</head>
 	
 	<body>
@@ -33,15 +34,15 @@
 						<p>Managing students in your classes has never been easier!</p>
 					</div>
 					<div class="col-sm-6 col-xs-12">
-						<form class="form">
+						<form class="form" id="login">
 							<div class="panel panel-primary">
 								<div class="panel-heading">
 									<h4>Log In</h4>
 								</div>
 								<div class="panel-body input-group">
 									<br />
-									<input type="email" class="form-control" placeholder="Email" />
-									<input type="password" class="form-control" placeholder="Password" />
+									<input type="email" id="login-email" class="form-control" placeholder="Email" />
+									<input type="password" id="login-password" class="form-control" placeholder="Password" />
 									<input type="submit" class="btn btn-primary" value="Log In" />
 								</div>
 							</div>
