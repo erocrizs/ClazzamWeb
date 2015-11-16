@@ -13,6 +13,7 @@
 		<script src="res/js/front-end.js"></script>
 		<script src="res/js/redirect.js"></script>
 		<script src="res/js/logged-in.js"></script>
+		<script src="res/js/home.js"></script>
 	</head>
 	
 	<body>
@@ -31,10 +32,10 @@
 						</div>
 						<div class="collapse navbar-collapse" id="collapse">
 							<ul class="nav navbar-nav navbar-right">
-								<li><a class="teacherOnly" href="create-class.html">Create Class</a></li> <!-- appears ONLY if teacher account -->
-								<li><a class="studentOnly" href="join1.html">Join Class</a></li> <!-- appears ONLY if student account -->
-								<li><a href="account-settings.html">Account Setting</a></li>
-								<li><a id="logout" href="#">Log Out</a></li>
+								<li><a class="teacherOnly logout-hidden" href="create-class.html">Create Class</a></li> <!-- appears ONLY if teacher account -->
+								<li><a class="studentOnly logout-hidden" href="join1.html">Join Class</a></li> <!-- appears ONLY if student account -->
+								<li><a href="account-settings.html" class="logout-hidden">Account Setting</a></li>
+								<li><a id="logout" class="logout-hidden" href="#">Log Out</a></li>
 							</ul>
 						</div>
 					</div>
@@ -42,27 +43,7 @@
 			</header>
 			
 			<main class="container">
-				<div class="class-container">
-				
-					<!-- FOR EACH CLASS ASSOCIATED WITH THIS USER, MAKE ONE OF THESE-->
-					<div class="panel panel-primary">
-						<div class="container">
-							<a href="class-page.html">
-								<h3>DLSU Calculus 1</h3>
-							</a>
-							<div class="col-sm-6 col-xs-6">
-								<strong>Venue</strong>: CTC 123
-							</div>
-							<div class="col-sm-6 col-xs-6">
-								<strong>Sched</strong>: TTH 4:30-6:00
-							</div>
-							<div class="col-sm-12 col-xs-12">
-								<strong>Size</strong>: 23
-							</div>
-						</div>
-					</div>
-					<!-- -->
-					
+				<div class="class-container" id="class-list">
 				</div>
 			</main>
 			

@@ -1,9 +1,8 @@
 $(document).ready(function() {
 	
-	$(".collapsed").hide();
+	$(".logout-hidden").hide();
 	if(Parse.User.current() !== null){
-		$(".collapsed").show();
-		
+		$(".logout-hidden").show();
 		var isTeacher = Parse.User.current().get("account_type");
 		if(isTeacher) {
 			$(".studentOnly").hide();
