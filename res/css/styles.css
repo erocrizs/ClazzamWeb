@@ -240,3 +240,7 @@ body {
 	size: 10px;
 	font-weight: bold;
 }
+
+#class-list {
+	list-style-type: none;
+}

@@ -58,7 +58,7 @@ $(document).ready( function() {
 		add.set("response", response);
 		add.save({
 			success: function() {
-				console.log("success");
+				window.location.href = "home.html";
 			}, error: function() {
 				console.log("Enrolling Error: " + error.message);
 			}
