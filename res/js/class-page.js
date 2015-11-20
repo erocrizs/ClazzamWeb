@@ -1,0 +1,1 @@
+var classCode = sessionStorage.getItem("class-code");

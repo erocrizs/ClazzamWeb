@@ -1,7 +1,7 @@
 var currClass = null;
 
 // filler content
-var classID = "ymGikcegXa";
+var classID = sessionStorage.getItem("class-code");
 function setFields() {
 	var query = new Parse.Query(Class_);
 	query.equalTo("objectId", classID);
