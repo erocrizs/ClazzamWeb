@@ -74,12 +74,13 @@ $(document).ready(function() {
 							var schedule = current.get("schedule");
 							var out = "";
 							out += "<li class=\"panel panel-primary\"><div class=\"container\">";
-							out += "<a href=\"class-page.html\"><h3>" + class_name +"</h3></a>";
+							out += "<a href=\"#\" name=\"" + current.id + "\" class=\"class-link\"><h3>" + class_name +"</h3></a>";
 							out += "<div class=\"col-sm-6 col-xs-6\"><strong>Venue</strong>: "+ venue +"</div>";
 							out += "<div class=\"col-sm-6 col-xs-6\"><strong>Sched</strong>: " + schedule + "</div>";
 							out += "<div class=\"col-sm-12 col-xs-12\"><strong>Section</strong>: " + section + "</div></div></li>";
 							$("#class-list").append(out);
 						}
+						addLink();
 					}, error: function(error) {
 						console.log("Student Enrollment Query Error: " + error.message);
 					}

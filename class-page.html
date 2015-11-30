@@ -47,29 +47,27 @@
 				
 					<div class="panel panel-primary">
 						<div class="container">
-							<h3>DLSU Calculus 1</h3>
+							<h3><span class="cat_no">LOADING</span></h3>
 							<div class="col-sm-6 col-xs-6">
-								<strong>Section</strong>: BB
+								<strong>Section</strong>: <span class="section">loading</span>
 							</div>
 							<div class="col-sm-6 col-xs-6">
-								<strong>Venue</strong>: CTC 123
+								<strong>Venue</strong>: <span class="venue">loading</span>
 							</div>
 							<div class="col-sm-6 col-xs-6">
-								<strong>Sched</strong>: TTH 4:30-6:00
-							</div>
-							<div class="col-sm-6 col-xs-6">
-								<strong>Size</strong>: 23
-							</div>
-							<div class="col-sm-12 col-xs-12">
-								<strong>Teacher</strong>: teacherNameHere
+								<strong>Sched</strong>: <span class="sched">loading</span>
 							</div>
 							
-							<!-- The next div only appears if the user is a teacher -->
-							<div class="col-sm-12 col-xs-12">
-								<a href="class-settings.html"><strong>
+							
+							<div class="col-sm-6 col-xs-6 studentOnly">
+								<strong>Teacher</strong>: <span class="teacher">loading</span>
+							</div>
+							<div class="col-sm-6 col-xs-6 teacherOnly">
+								<a href="#" id="class-settings-link"><strong>
 									Class Settings
 								</strong></a>
 							</div>
+							
 						</div>
 					</div>
 					<div class="row container">
@@ -78,9 +76,9 @@
 						
 							<!-- The next div only appears if the user is a teacher -->
 							<div class="panel panel-primary">
-								<h4>Class Code: 1232321</h4>
-								<p>Show this class code to
-								your students so can enroll in your
+								<h4>Class Code: <span class="class-code">LOADING</span></h4>
+								<p class="varies">Show this class code to
+								your students so they can enroll in your
 								Clazzam class!</p>
 							</div>
 							
@@ -90,62 +88,16 @@
 							<!-- The last column should only appear if the viewer is a teacher -->
 							<table class="table student-table table-striped table-bordered table-hover">
 								<thead>
-									<tr>
+									<tr class="student_list_head">
 										<th>Surname</th>
 										<th>Firstname</th>
 										<th>Nickname</th>
 										<th>Year and Course</th>
-										<th>Index Card</th>
+										<th>Cuts</th>
+										<th>Recitation</th>
 									</tr>
 								</thead>
-								<tbody>
-									
-									<!-- For each student, make a new row -->
-									<tr>
-										<td>Rizal</td>
-										<td>Jose</td>
-										<td>Pepe</td>
-										<td>MD Optalmology</td>
-										<td>
-											<a href="student-profile.html">
-												click here
-											</a>
-										</td>
-									</tr>
-									<tr>
-										<td>Tan</td>
-										<td>Andre</td>
-										<td>Andre</td>
-										<td>3 - BS Computer Science</td>
-										<td>
-											<a href="student-profile.html">
-												click here
-											</a>
-										</td>
-									</tr>
-									<tr>
-										<td>Martinez</td>
-										<td>Zachary Ivan</td>
-										<td>Bitch</td>
-										<td>3 - BS CS/BS DGDD</td>
-										<td>
-											<a href="student-profile.html">
-												click here
-											</a>
-										</td>
-									</tr>
-									<tr>
-										<td>Lola</td>
-										<td>Bunny</td>
-										<td>Bunny</td>
-										<td>filler here</td>
-										<td>
-											<a href="student-profile.html">
-												click here
-											</a>
-										</td>
-									</tr>
-									
+								<tbody class="student_list">
 								</tbody>
 							</table>
 						</div>
