@@ -56,6 +56,8 @@ $(document).ready( function() {
 		add.set("classId", currClass);
 		add.set("studentId", currStudent);
 		add.set("response", response);
+		add.set("recitation", 0);
+		add.set("cuts", 0);
 		add.save({
 			success: function() {
 				window.location.href = "home.html";
