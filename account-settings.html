@@ -13,6 +13,7 @@
 		<script src="res/js/front-end.js"></script>
 		<script src="res/js/redirect.js"></script>
 		<script src="res/js/logged-in.js"></script>
+		<script src="res/js/account-settings.js"></script>
 	</head>
 	
 	<body>
@@ -48,35 +49,33 @@
 							<div class="panel-heading">
 								<h4>Account Settings</h4>
 							</div>
-							<form class="panel-body">
+							<form class="panel-body" id="account-setting">
 								<!-- Default value here are of that in their rows in the database -->
-								<label for="account-type">Account Type:</label>
-								<input type="email" class="form-control" value="Teacher" id="email" disabled/>
 								<label for="email">Email:</label>
-								<input type="email" class="form-control" placeholder="Email" value="setEmail" id="email" required/>
+								<input type="text" class="form-control" placeholder="Email" value="loading" id="email" disabled/>
 								<label for="fname">First Name:</label>
-								<input type="text" class="form-control" placeholder="First Name" value="setFName" id="fname"  required/>
+								<input type="text" class="form-control" placeholder="First Name" value="loading" id="fname"  disabled/>
 								<label for="lname">Last Name:</label>
-								<input type="text" class="form-control" placeholder="Last Name" value="setLName" id="lname"  required/>
+								<input type="text" class="form-control" placeholder="Last Name" value="loading" id="lname"  disabled/>
 								<label for="phone">Contact Number:</label>
-								<input type="tel" class="form-control" placeholder="Contact Number" value="09155555555" id="phone"  required/>
+								<input type="text" class="form-control" placeholder="Contact Number" value="loading" id="phone"  disabled/>
 								
 								<!-- this SHOULD NOT show up if the account is of the teacher's -->
-								<div id="studnet-details">
+								<div class="student-details studentOnly">
 									<label for="yearncourse">Year and Course:</label>
-									<input type="text" class="form-control" placeholder="Year and Course" value="YNC" id="yearncourse" required="false"/>
+									<input type="text" class="form-control" placeholder="Year and Course" value="loading" id="yearncourse" disabled/>
 									<label for="nickname">Nickname:</label>
-									<input type="text" class="form-control" placeholder="Nickname" value="setNName" id="nickname" />
+									<input type="text" class="form-control" placeholder="Nickname" value="loading" id="nickname" disabled/>
 									<label for="bday">Birthday:</label>
-									<input type="date" class="form-control" id="bday" value="1991-01-10"/>
+									<input type="text" class="form-control" id="bday" value="loading" disabled/>
 								</div>
 								
 								<hr />
-								<label for="email">Password:</label>
-								<input type="password" class="form-control" placeholder="Password" id="phone"  required/>
+								
 								<div class="btn-group">
 									<input type="submit" class="btn btn-primary" value="Confirm Changes" />
 									<input type="reset" class="btn btn-primary" value="Reset Changes"/>
+									<div id="confirmation"></div>
 								</div>
 								
 							</form>
