@@ -6,7 +6,6 @@ function addLink() {
 	$("a.index-card-link").click( function(event) {
 		var aTag = $(event.target);
 		var enrollCode = aTag.attr('name');
-		alert("enroll-code: " + enrollCode);
 		sessionStorage.setItem("enroll-code", enrollCode);
 		sessionStorage.setItem("class-code", classCode);
 		window.location.href = "student-profile.html";
